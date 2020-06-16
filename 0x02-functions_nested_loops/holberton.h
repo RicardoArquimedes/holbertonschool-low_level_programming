@@ -30,3 +30,11 @@ int _abs(int);
  *int print_last_digit - last digit
  */
 int print_last_digit(int);
+/**
+ *void jack_bauer- minutes
+ */
+void jack_bauer(void);
+/**
+ *void times_table  - times table
+ */
+void times_table(void);
