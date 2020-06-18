@@ -1,7 +1,8 @@
 #include "holberton.h"
 
 /**
- *print_square - print square
+ *print_square - print squar size
+ *
  *Return: Always 0
  *@size: integer
 */
@@ -17,11 +18,9 @@ void print_square(int size)
 			if (i == 1 || i == size || j == 1 || j == size || i == j || size + 1)
 			{
 				_putchar('#');
-				else
-				{
-					_putchar(' ');
-				}
 			}
+				else
+				_putchar(' ');
 		}
 	}
 	_putchar('\n');
