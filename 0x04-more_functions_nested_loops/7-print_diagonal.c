@@ -4,32 +4,27 @@
  *print_diagonal- print a diagonal line on terminal
  *@n: integer
  */
-void print_diagonal(int n)
+void print_diagonal(int d)
 {
-	int x;
-	int y;
+	int f, c;
 
-	if (n > 0)
+	if (d <= 0)
 	{
-		for (x = 0; x < n; x++)
-		{
-			for (y = 0; y <= n; y++)
-			{
-				if (x == y)
-				{
-					_putchar('\\');
-					break;
-				}
-				else
-				{
-					_putchar(' ');
-				}
-			}
-			_putchar('\n');
-		}
+		_putchar('\n');
 	}
-	else
+
+	for (f = 1; f <= d; f++)
 	{
+
+		for (c = 1  ; c <= d ; c++)
+		{
+
+			if (f == c)
+				_putchar('\\');
+			else
+				_putchar(' ');
+
+		}
 		_putchar('\n');
 	}
 }
