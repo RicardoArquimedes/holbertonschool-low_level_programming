@@ -1,42 +1,45 @@
 #include "holberton.h"
+
 /**
- * print_number - print an integer
- * @n: value
- *
+ * print_number -  checks for checks for a digit (0 through 9).
+ * @n: n -  Variable
+ * Return: Always 0.
  */
 void print_number(int n)
 {
-	unsigned int num;
-	int b, m;
+	unsigned int z;
+	int m, b;
 
-	if (n >= 0 && n < 10)
+	b = 10;
+
+	if (n < 10 && n >= 0)
 	{
-		_putchar(n + 48);
+		_putchar (n + '0');
 	}
-	else if (n < 0 && n > -10)
+	else if (n > -10 && n < 0)
 	{
-		n *= -1;
+		n = n - 2 * n;
 		_putchar('-');
-		_putchar(n + 48);
+		_putchar (n + '0');
 	}
+
 	else
 	{
 		if (n < 0)
 		{
-			n *= -1;
-			_putchar('-');
+			n = n * -1;
+			_putchar ('-');
 		}
-		b = 10;
-		num = n;
-		while (num / b > 9)
+		z = n;
+		while (z / b > 9)
 		{
 			b = b * 10;
 		}
 		while (b > 0)
 		{
-			m = num / b;
-			num = num % b;
-			_putchar(m + 48);
+			m = z / b;
+			z = z % b;
+			_putchar (m + '0');
 			b = b / 10;
 		}
 	}
