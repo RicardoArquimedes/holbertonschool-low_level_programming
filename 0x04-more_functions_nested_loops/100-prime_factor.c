@@ -1,24 +1,24 @@
 #include <stdio.h>
 /**
- * main - finds and prints the largest prime factor of the number
+ * main - the largest prime factor of the number
  *
  * Return: 0 Always
  */
 int main(void)
 {
-	long a, i;
+	long y, z;
 
-	i = 2;
-	a = 612852475143;
+	y = 2;
+	z = 612852475143;
 
-	for (i = 2; i <= a; i++)
+	for (y = 2; y <= z; y++)
 	{
-		if (a % i == 0)
+		if (z % y == 0)
 		{
-			while (a % i == 0)
-				a = a / i;
+			while (z % y == 0)
+				z = z / y;
 		}
 	}
-	printf("%ld\n", i - 1);
+	printf("%ld\n", y - 1);
 	return (0);
 }
