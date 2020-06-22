@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  *main - prints first 50 fibonacci numbers
  *
@@ -24,6 +23,5 @@ int main(void)
 		a++;
 	}
 	printf("%ld\n", b);
-
 	return (0);
 }
