@@ -5,7 +5,6 @@
  * @src: character
  *Return: dest
  */
-
 char *_strcpy(char *dest, char *src)
 {
 	int a;
