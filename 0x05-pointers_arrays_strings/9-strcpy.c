@@ -6,13 +6,15 @@
  *Return: dest
  */
 char *_strcpy(char *dest, char *src)
+
 {
-	int z;
+	int x = 0, y;
 
-	for (z = 0; *(src + z) != '\0'; z++)
+	while (src[x] != '\0')
+		x++;
+	for (y = 0; y <= x; y++)
 	{
-		*(dest + z) = *(src + z);
+		dest[y] = src[y];
 	}
-
 	return (dest);
 }
