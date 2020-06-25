@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _strcat -- string concatanate
+ *_strcat - string concatanate
  *
  *@dest: char
  *@src: char
@@ -8,17 +8,17 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int i = 0, c = 0;
+	int d = 0, s = 0;
 
-	while (dest[i] != '\0')
+	while (dest[d] != '\0')
 	{
-		i++;
+		d++;
 	}
-	while (src[c] != '\0')
+	while (src[s] != '\0')
 	{
-		dest[i] = src [c];
-		i++;
-		c++;
+		dest[d] = src[s];
+		d++;
+		s++;
 	}
 
 	return (dest);
