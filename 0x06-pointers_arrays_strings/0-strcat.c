@@ -1,9 +1,10 @@
 #include "holberton.h"
 /**
- *_strcat - string concatanate
- *
+ *_strcat - copy string to another string.
  *@dest: char
  *@src: char
+ *Return: dest
+ *
  */
 
 char *_strcat(char *dest, char *src)
