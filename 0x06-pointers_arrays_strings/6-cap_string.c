@@ -4,36 +4,35 @@
  * @s: string to convert
  * Return: s capitalizes
  */
-
-
 char *cap_string(char *s)
 {
-	int j = 0;
+	int ch;
 
-	for (j = 0; s[j] != '\0'; j++)
+	for (ch = 0; s[ch] != '\0'; ch++)
 	{
-		if (j == 0)
-
+		if (ch == 0)
 		{
-			if (s[j] >= 'a' && s[j] <= 'z')
+			if (s[ch] >= 'a' && s[ch] <= 'z')
 			{
-				s[j] -= 32;
+				s[ch] = s[ch] - 32;
 			}
-
-			else if (s[j] == ' ' || s[j] == '\t'
-			    || s[j] == '\n'
-			    || s[j] == ','
-			    || s[j] == ';'
-			    || s[j] == '.'
-			    || s[j] == '!'
-			    || s[j] == '?'
-			    || s[j] == '('
-			    || s[j] == ')'
-			    || s[j] == '{'
-			    || s[j] == '}')
+		}
+		else
+		{
+			if (s[ch] == ' ' || s[ch] == '\t'
+			    || s[ch] == '\n'
+			    || s[ch] == ','
+			    || s[ch] == ';'
+			    || s[ch] == '.'
+			    || s[ch] == '!'
+			    || s[ch] == '?'
+			    || s[ch] == '('
+			    || s[ch] == ')'
+			    || s[ch] == '{'
+			    || s[ch] == '}')
 			{
-
-				s[j] -= 32;
+				if (s[ch + 1] >= 'a' && s[ch + 1] <= 'z')
+					s[ch + 1] = s[ch + 1] - 32;
 			}
 		}
 
