@@ -1,31 +1,29 @@
 #include "holberton.h"
-
+#include <stdio.h>
 /**
- * rot13 - encode a string into rot13
- * @s: Pointer to Char
- * Return: s
+ * rot13-  encodes a string into rot13.
+ * @r: string to convert
+ * Return: s econdes
  */
-
-char *rot13(char *s)
+char *rot13(char *r)
 {
-	int x = 0;
-	int y = 0;
+	int j, i;
 
-	char *s1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char *s2 = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char input[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char output[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	while (s[x] != '\0')
+
+	for (j = 0; r[j] != '\0'; j++)
 	{
-		while (s1[y] != '\0')
+		for (i = 0; input[i] != '\0'; i++)
 		{
-			if (s[x] == s1[y])
+			if (r[j] == input[i])
 			{
-				s[x] = s2[y];
+				r[j] = output[i];
+				break;
 			}
-			y++;
 		}
-		y = 0;
-		x++;
+
 	}
-	return (s);
+	return (r);
 }
