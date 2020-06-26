@@ -7,21 +7,22 @@
  */
 char *leet(char *s)
 {
-	int ch = 0;
+	int j, i;
 
-	while (s[ch] != '\0')
+	char array_leet[10] = "aAeEoOtTlL";
+	char num[10] = "4433007711";
+
+
+	for (j = 0; s[j] != '\0'; j++)
 	{
-		while (s[ch] == 'a' || s[ch] == 'A')
-			s[ch] = '4';
-		while (s[ch] == 'e' || s[ch] == 'E')
-			s[ch] = '3';
-		while (s[ch] == 'o' || s[ch] == 'O')
-			s[ch] = '0';
-		while (s[ch] == 't' || s[ch] == 'T')
-			s[ch] = '7';
-		while (s[ch] == 'l' || s[ch] == 'L')
-			s[ch] = '1';
-		ch++;
+		for (i = 0; i < 10; i++)
+		{
+			if (s[j] == array_leet[i])
+			{
+				s[j] = num[i];
+			}
+		}
+
 	}
 	return (s);
 }
