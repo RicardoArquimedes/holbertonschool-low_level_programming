@@ -3,20 +3,17 @@
  * _strcmp - compare the values of a string
  * @s1: character
  * @s2: character
- * @str: int
+ * Return: 0
  */
 
 int _strcmp(char *s1, char *s2)
 {
+	int a;
 
-        int str = 0;
-	
-        while ((s1[str] ==  s2[str]) && (s1[str] != '\0'))
-         
-
+	for (a = 0; s1[a] != '\0' && s2[a] != '\0'; a++)
 	{
-		str++;
+		if (s1[a] != s2[a])
+			return ((int) s1[a] - s2[a]);
 	}
-        return (s1[str] -s2[str]);
+	return (0);
 }
-
