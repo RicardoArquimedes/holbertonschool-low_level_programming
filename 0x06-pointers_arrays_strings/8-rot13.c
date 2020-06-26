@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * leet - function that encodes a string into 1337.
+ * rot13 - function that encodes a string into 1337.
  * @s: Pointer to Char
- * Return: char.
+ * Return: s
  */
 
 char *rot13(char *s)
