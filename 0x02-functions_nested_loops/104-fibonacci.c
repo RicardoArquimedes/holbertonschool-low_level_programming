@@ -2,7 +2,7 @@
 
 /**
  * main - Prints the sum of multiples of 3 or 5 to 1024
- *
+ *@i: integer
  * Return: On success 1.
  *
  */
