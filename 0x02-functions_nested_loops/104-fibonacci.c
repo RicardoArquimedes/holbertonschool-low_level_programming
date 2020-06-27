@@ -1,11 +1,12 @@
 #include <stdio.h>
-
 /**
- *main - Prints the sum of multiples of 3 or 5 to 1024
+ *main - write a program that computes and prints the sum of
+ * all the multiples of 3 or 5 below 1024 (excluded)
+ * i: Integer
+ * z: Result
  * Return: 0
  *
  */
-
 int main(void)
 {
 	int i;
