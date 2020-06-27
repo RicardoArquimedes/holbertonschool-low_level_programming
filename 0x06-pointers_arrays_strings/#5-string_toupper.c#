@@ -1,0 +1,21 @@
+#include "holberton.h"
+#include <ctype.h>
+
+
+
+
+char *string_toupper(char *toupper)
+{
+
+	int j = 0; 
+	char str[] = "HOLBERTON SCHOOL\n"; 
+	char ch; 
+  
+	while (str[j]) { 
+		ch = str[j]; 
+		_putchar toupper(ch)); 
+		j++; 
+	} 
+  
+	return (0); 
+} 

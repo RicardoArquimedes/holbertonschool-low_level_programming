@@ -6,11 +6,10 @@
  * Return: s
  */
 char *leet(char *s)
-
-{
+z{
 	int j, i;
 
-	char leet[10] = "aAeEoOtTlL";
+	char array_leet[10] = "aAeEoOtTlL";
 	char num[10] = "4433007711";
 
 
@@ -18,7 +17,7 @@ char *leet(char *s)
 	{
 		for (i = 0; i < 10; i++)
 		{
-			if (s[j] == leet[i])
+			if (s[j] == array_leet[i])
 			{
 				s[j] = num[i];
 			}

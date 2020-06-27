@@ -1,0 +1,23 @@
+#include "holberton.h"
+/**
+ *print_diagonal - d
+ *@n: integer
+ *
+ *Return - print diagonal n spaces long to stdout; print newline if n<=0
+ */
+
+void print_diagonal(int n)
+{
+	int a;
+
+	if (n > 0)
+	{
+		for (a = 0; a < n; a++)
+			_putchar('\\');
+		_putchar('\n');
+	}
+	else
+	{
+		_putchar('\n');
+	}
+}

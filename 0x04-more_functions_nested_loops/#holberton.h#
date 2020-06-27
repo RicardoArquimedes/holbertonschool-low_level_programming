@@ -1,0 +1,21 @@
+/**
+ *print int _isupper
+ */
+int _isupper(int c);
+/**
+ *print int _isdigit
+ */
+int _isdigit(int c);
+/**
+ *int mul(int a, int b);
+ */
+int mul(int a, int b);
+/**
+ * print numbers
+ */
+void print_numbers(void);
+/**
+ *_putchar - print putchar
+ *
+ */z
+int _putchar(char c); 
