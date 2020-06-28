@@ -4,7 +4,7 @@
  * _strchr - string a character
  *@s: character
  *@c: character
- * Return: 0
+ * Return: s
  */
 char *_strchr(char *s, char c)
 {
