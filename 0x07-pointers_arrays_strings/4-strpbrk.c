@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
-  * _strspn - gets the length of a prefix substring..
-  * @s: C string to be scanned.
-  * @accept: C string containing the characters to match.
+  * _strspn - length of a prefix substring..
+  * @s: C string
+  * @accept: C string
   * Return: ()
   */
 char *_strpbrk(char *s, char *accept)
