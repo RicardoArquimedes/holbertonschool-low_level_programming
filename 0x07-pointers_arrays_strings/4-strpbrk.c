@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-  * _strspn - length of a prefix substring..
+  * _strpbrk - length of a prefix substring..
   * @s: C string
   * @accept: C string
   * Return: ()
