@@ -2,8 +2,8 @@
 
 /**
  * factorial - print the factorial
- * @n: integer
- * Return: 0
+ * @n: number
+ * Return: Product
  */
 
 int factorial(int n)
