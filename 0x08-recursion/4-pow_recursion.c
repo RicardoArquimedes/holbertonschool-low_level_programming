@@ -3,7 +3,7 @@
  * _pow_recursion - return the value of x
  * @x: number
  * @y: power
- * Return: prototype
+ * Return: product
  */
 
 int _pow_recursion(int x, int y)
