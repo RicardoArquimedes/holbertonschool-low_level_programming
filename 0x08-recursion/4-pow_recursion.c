@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * _pow_recursion - return the value of x 
- * @x: integer
- * @y: integer
+ * _pow_recursion - return the value of x
+ * @x: number
+ * @y: power
  * Return: prototype
  */
 
