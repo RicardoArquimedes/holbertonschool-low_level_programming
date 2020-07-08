@@ -1,50 +1,51 @@
 #include "holberton.h"
-#include <stdio.h>
 #include <stdlib.h>
-
 /**
- * str_concat - Write a function that concatenates two strings.
- *
- * @s1: array 1
- * @s2: array 2
- *
- * Return: Pointer
+ * str_len - size string
+ * @s: string
+ * Return: (len)
+ */
+int str_len(char *s)
+{
+	int len = 0;
+	int a;
+
+	for (a = 0; s && s[a] != '\0'; a++)
+	{
+		len++;
+	}
+	return (len);
+}
+/**
+ * str_concat - concatenates two strings.
+ * @s1: string
+ * @s2: string
+ * Return: (D)
  */
 char *str_concat(char *s1, char *s2)
 {
-	int a, b, c, d;
-	char *concat;
+	char *D;
+	int a = 0;
+	int b;
+	int c = str_len(s1) + str_len(s2) + 1;
 
-	if (s1 == NULL)
+	D = malloc(sizeof(char) * c);
+	if (D == NULL)
 	{
-		s1 = "";
+		return (NULL);
 	}
-	if (s2 == NULL)
+	for (b = 0; s1 && s1[b] != '\0'; b++)
 	{
-		s2 = "";
-	}
-
-	a = 0, b = 0;
-	while (*(s1 + a) != '\0')
+		D[a] = s1[a];
 		a++;
-	while (*(s2 + b) != '\0')
+	}
+	for (b = 0; s2 && s2[b] != '\0'; b++)
+	{
+		D[a] = s2[b];
 		b++;
-
-	concat = malloc(a + b + 1);
-
-	if (concat == 0)
-	{
-		return (0);
 	}
+	D[a] = '\0';
+	return (D);
 
-	for (c = 0; c < a; c++)
-	{
-		*(concat + c) = *(s1 + c);
-	}
-	for (b = 0, d = a; c < b; d++, c++)
-	{
-		*(concat + d) = *(s2 + c);
-	}
-	*(concat + d) = '\0';
-	return (concat);
+
 }
