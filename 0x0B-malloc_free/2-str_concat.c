@@ -1,6 +1,6 @@
 #include <stdlib.h>
 /**
- * str_len - size
+ * str_len - size of
  * @s: string
  * Return: (len)
  */
