@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * malloc_checked - allocates memory using malloc.
- * @b: int the array
+ * @m: int the array
  * Return: (C)
  */
 void *malloc_checked(unsigned int m)
