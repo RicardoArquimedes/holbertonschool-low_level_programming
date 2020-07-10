@@ -1,6 +1,6 @@
 #include <stdlib.h>
 /**
- * array_range - array of integers.
+ * array_range - array of integ
  * @min: minimun
  * @max: maximun
  * Return: (N)
