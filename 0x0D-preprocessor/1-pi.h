@@ -1,0 +1,6 @@
+#ifndef OBJECTS_LIKE_MACRO
+#define OBJECTS_LIKE_MACRO
+
+#define PI 3.14159265359
+
+#endif /*OBJECTS_LIKE_MACRO*/
