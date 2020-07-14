@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-#define E "Hello, Holberton"
+#define HOLBERTON  "Hello, Holberton"
 
 /**
  * main - Entry point
  */
 void main(void)
 {
-	printf("%s\n", E);
+	printf("%s\n", HOLBERTON);
 }
