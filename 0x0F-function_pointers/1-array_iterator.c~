@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include "function_pointers.h"
+
+void array_iterator(int *array, size_t size, void (*action)(int))
+{
+	size_t hexa;
+
+
+	if (array == '\0' || action == '\0')
+		return;
+	for (hexa = 0; hexa < size; hexa++)
+		(*action)(array[hexa]);
+		
+}
