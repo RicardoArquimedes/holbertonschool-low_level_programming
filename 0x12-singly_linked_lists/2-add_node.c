@@ -38,4 +38,4 @@ new_node->len = str_len(str);
 new_node->next = *head;
 *head = new_node;
 return (*head);
-}s
+}
