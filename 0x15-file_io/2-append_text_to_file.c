@@ -30,6 +30,6 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	write(file, text_content, len);
 
-	close(fd);
+	close(filename);
 	return (1);
 }
