@@ -23,12 +23,13 @@ int append_text_to_file(const char *filename, char *text_content)
 		}
 	}
 
-	file = open(filename, O_WRONLY | O_APPEND);
+	file = open(filename, O_RDWR | O_APPEND);
 
-	if (file < 0)
+	if (file == -1)
 		return (-1);
 
 	write(file, text_content, len);
 
+	close(fd);
 	return (1);
 }
