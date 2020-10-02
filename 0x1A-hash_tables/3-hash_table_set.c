@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-
 hash_node_t *create_node(const char *key, const char *value);
 
 /**
@@ -25,7 +24,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	node = create_node(key, value);
 	if (node == NULL)
 		return (0);
-	i = key_index((unsigned char *)key, slots->size);
+	a = key_index((unsigned char *)key, slots->size);
 	if (slots->array[a] == NULL)
 	{
 		node->next = NULL;
@@ -72,4 +71,3 @@ hash_node_t *create_node(const char *key, const char *value)
 	node->value = strdup(value);
 	return (node);
 }
-
