@@ -42,19 +42,20 @@ This project is about  Foundations - Low-level programming & Algorithm - Hatchin
 
 ---
 <p align="center">
-    <h2 align="center">Made by, Ricardo Arquímedes Castro</h2>
+    <h2 align="center">By, Ricardo Arquímedes Castro</h2>
       <p align="center">
         <a href="https://twitter.com/arquimedescq" target="_blank">
-            <img alt="twitter_page" src="https://github.com/RicardoArquimedes/readme-template/blob/master/images/twitter.png" style="float: center; margin-right: 10px" height="50" width="50">
+            <img alt="twitter_page" src="https://raw.githubusercontent.com/EckoJuan/Readme_template/master/images/twitter.png" style="float: center; margin-right: 10px" height="50" width="50">
         </a>
         <a href="https://www.linkedin.com/in/RicardoArquimedes/" target="_blank">
-            <img alt="linkedin_page" src="https://github.com/RicardoArquimedes/readme-template/blob/master/images/linkedin.png" style="float: center; margin-right: 10px" height="50"  width="50">
+            <img alt="linkedin_page" src="https://raw.githubusercontent.com/EckoJuan/Readme_template/master/images/linkedin.png" style="float: center; margin-right: 10px" height="50"  width="50">
         </a>
-        <a href="https://richardcqt28.medium.com/" target="_blank">
-            <img alt="medium_page" src="https://github.com/RicardoArquimedes/readme-template/blob/master/images/medium.png" style="float: center; margin-right: 10px" height="50" width="50">
+        <a href="https://medium.com/@richardcqt28" target="_blank">
+            <img alt="medium_page" src="https://raw.githubusercontent.com/EckoJuan/Readme_template/master/images/medium.png" style="float: center; margin-right: 10px" height="50" width="50">
         </a>
       </p>
 </p>
+
 
 <p align="center">
    <img src="https://www.holbertonschool.com/holberton-logo.png"
